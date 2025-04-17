@@ -112,6 +112,37 @@ app.get("/formulario/get/:id", async (req, res) => {
   }
 });
 
+//* Endpoint para obtener todos los formularios del paciente del mismo tipo
+
+app.get("/formulario/get/:pacienteId/:tipo", async (req, res) => {
+  try {
+    const { pacienteId, tipo } = req.params;
+
+    if (!pacienteId || !tipo) {
+      return res
+        .status(400)
+        .json({ error: "La id del paciente y el tipo son necesarios" });
+    }
+
+    const allResponses = await prisma.formulario.findMany({
+      where: { pacienteId: pacienteId, tipo: tipo },
+    });
+
+    if (!allResponses) {
+      res
+        .status(404)
+        .json({
+          error: "No se encontró ninguna coincidencia con los datos enviados",
+        });
+    }
+
+    return allResponses;
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ error: "Error al procesar la solicitud" });
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`Express server corriendo en http://localhost:${PORT}`);
 });
