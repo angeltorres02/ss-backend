@@ -97,7 +97,6 @@ app.get("/formulario/get/:id", async (req, res) => {
     const responses = await prisma.formulario.findFirst({
       where: { id: id },
     });
-    console.log(responses, id);
 
     if (!responses) {
       return res.status(404).json({
@@ -105,7 +104,7 @@ app.get("/formulario/get/:id", async (req, res) => {
       });
     }
 
-    return res.json(responses);
+    return res.status(200).json(responses);
   } catch (error) {
     console.error(error);
     return res.status(500).json({ error: "Error al procesar la solicitud" });
@@ -129,14 +128,12 @@ app.get("/formulario/get/:pacienteId/:tipo", async (req, res) => {
     });
 
     if (!allResponses) {
-      res
-        .status(404)
-        .json({
-          error: "No se encontró ninguna coincidencia con los datos enviados",
-        });
+      res.status(404).json({
+        error: "No se encontró ninguna coincidencia con los datos enviados",
+      });
     }
 
-    return allResponses;
+    return res.status(200).json(allResponses);
   } catch (error) {
     console.error(error);
     return res.status(500).json({ error: "Error al procesar la solicitud" });
