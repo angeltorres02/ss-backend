@@ -6,14 +6,15 @@ const CryptoJS = require("crypto-js");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
-const SECRET_KEY = process.env.SECRET_KEY;
+const { PrismaClient } = require("@prisma/client");
+const prisma = new PrismaClient();
 
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Endpoint para recibir la petición y redirigir según el tipo
-// Ejemplo de URL: GET /norton/[encryptedData]
+//* Endpoint para recibir la petición y redirigir según el tipo
+
 app.get("/:tipo/:encryptedData", (req, res) => {
   try {
     const { tipo, encryptedData } = req.params;
@@ -22,27 +23,21 @@ app.get("/:tipo/:encryptedData", (req, res) => {
       return res.status(400).json({ error: "encryptedData missing" });
     }
 
-    // Decodificar la cadena para obtener el valor original
     const decodedData = decodeURIComponent(encryptedData);
 
     if (!process.env.SECRET_KEY) {
       return res.status(500).json({ error: "Secret key not defined" });
     }
 
-    // Intentar desencriptar la cadena
     const bytes = CryptoJS.AES.decrypt(decodedData, process.env.SECRET_KEY);
     const decryptedText = bytes.toString(CryptoJS.enc.Utf8);
 
     if (!decryptedText) {
-      // Si toString() retorna cadena vacía, la desencriptación falló
       return res
         .status(400)
         .json({ error: "Decryption failed. Possibly malformed data." });
     }
 
-    const decryptedData = JSON.parse(decryptedText);
-
-    // Continúa con la lógica de redirección
     const baseUrl = "http://localhost:3000";
     let redirectPath = "/formulario/not-found";
     if (tipo === "norton") {
@@ -64,18 +59,10 @@ app.get("/:tipo/:encryptedData", (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Express server corriendo en http://localhost:${PORT}`);
-});
-
-// En el mismo server.js (o en otro archivo de rutas)
-const { PrismaClient } = require("@prisma/client");
-const bodyParser = require("body-parser");
-const prisma = new PrismaClient();
+//* Endpoint para agregar un formulario
 
 app.post("/formulario/add", async (req, res) => {
   try {
-    // Se espera que el cuerpo incluya: pacienteId, medicoId, tipo y respuestas
     const { pacienteId, medicoId, tipo, respuestas } = req.body;
     if (!pacienteId || !medicoId || !tipo || !respuestas) {
       return res.status(400).json({ error: "Datos incompletos" });
@@ -86,7 +73,7 @@ app.post("/formulario/add", async (req, res) => {
         pacienteId,
         medicoId,
         tipo,
-        respuestas, // Contendrá las respuestas completas del formulario
+        respuestas,
       },
     });
 
@@ -95,4 +82,36 @@ app.post("/formulario/add", async (req, res) => {
     console.error("Error al crear formulario:", error);
     return res.status(500).json({ error: "Error al procesar la solicitud" });
   }
+});
+
+//* Endpoint para obtener un formulario por ID
+
+app.get("/formulario/get/:id", async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    if (!id) {
+      return res.status(400).json({ error: "No hay id" });
+    }
+
+    const responses = await prisma.formulario.findFirst({
+      where: { id: id },
+    });
+    console.log(responses, id);
+
+    if (!responses) {
+      return res.status(404).json({
+        error: "No existe un formulario con esa ID",
+      });
+    }
+
+    return res.json(responses);
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ error: "Error al procesar la solicitud" });
+  }
+});
+
+app.listen(PORT, () => {
+  console.log(`Express server corriendo en http://localhost:${PORT}`);
 });
