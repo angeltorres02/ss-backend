@@ -98,7 +98,7 @@ app.get("/formulario/get/:id", async (req, res) => {
       where: { id: id },
     });
 
-    if (!responses) {
+    if (!responses.length < 1) {
       return res.status(404).json({
         error: "No existe un formulario con esa ID",
       });
@@ -127,8 +127,8 @@ app.get("/formulario/get/:pacienteId/:tipo", async (req, res) => {
       where: { pacienteId: pacienteId, tipo: tipo },
     });
 
-    if (!allResponses) {
-      res.status(404).json({
+    if (allResponses.length < 1) {
+      return res.status(404).json({
         error: "No se encontró ninguna coincidencia con los datos enviados",
       });
     }
