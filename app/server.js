@@ -6,14 +6,15 @@ const CryptoJS = require("crypto-js");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
-const SECRET_KEY = process.env.SECRET_KEY;
+const { PrismaClient } = require("@prisma/client");
+const prisma = new PrismaClient();
 
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Endpoint para recibir la petición y redirigir según el tipo
-// Ejemplo de URL: GET /norton/[encryptedData]
+//* Endpoint para recibir la petición y redirigir según el tipo
+
 app.get("/:tipo/:encryptedData", (req, res) => {
   try {
     const { tipo, encryptedData } = req.params;
@@ -22,14 +23,12 @@ app.get("/:tipo/:encryptedData", (req, res) => {
       return res.status(400).json({ error: "encryptedData missing" });
     }
 
-    // Decodificar la cadena para obtener el valor original
     const decodedData = decodeURIComponent(encryptedData);
 
     if (!process.env.SECRET_KEY) {
       return res.status(500).json({ error: "Secret key not defined" });
     }
 
-    // Intentar desencriptar la cadena
     const bytes = CryptoJS.AES.decrypt(decodedData, process.env.SECRET_KEY);
     const decryptedText = bytes.toString(CryptoJS.enc.Utf8);
 
@@ -60,13 +59,7 @@ app.get("/:tipo/:encryptedData", (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Express server corriendo en http://localhost:${PORT}`);
-});
-
-const { PrismaClient } = require("@prisma/client");
-const bodyParser = require("body-parser");
-const prisma = new PrismaClient();
+//* Endpoint para agregar un formulario
 
 app.post("/formulario/add", async (req, res) => {
   try {
@@ -89,4 +82,64 @@ app.post("/formulario/add", async (req, res) => {
     console.error("Error al crear formulario:", error);
     return res.status(500).json({ error: "Error al procesar la solicitud" });
   }
+});
+
+//* Endpoint para obtener un formulario por ID
+
+app.get("/formulario/get/:id", async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    if (!id) {
+      return res.status(400).json({ error: "No hay id" });
+    }
+
+    const responses = await prisma.formulario.findFirst({
+      where: { id: id },
+    });
+
+    if (!responses.length < 1) {
+      return res.status(404).json({
+        error: "No existe un formulario con esa ID",
+      });
+    }
+
+    return res.status(200).json(responses);
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ error: "Error al procesar la solicitud" });
+  }
+});
+
+//* Endpoint para obtener todos los formularios del paciente del mismo tipo
+
+app.get("/formulario/get/:pacienteId/:tipo", async (req, res) => {
+  try {
+    const { pacienteId, tipo } = req.params;
+
+    if (!pacienteId || !tipo) {
+      return res
+        .status(400)
+        .json({ error: "La id del paciente y el tipo son necesarios" });
+    }
+
+    const allResponses = await prisma.formulario.findMany({
+      where: { pacienteId: pacienteId, tipo: tipo },
+    });
+
+    if (allResponses.length < 1) {
+      return res.status(404).json({
+        error: "No se encontró ninguna coincidencia con los datos enviados",
+      });
+    }
+
+    return res.status(200).json(allResponses);
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ error: "Error al procesar la solicitud" });
+  }
+});
+
+app.listen(PORT, () => {
+  console.log(`Express server corriendo en http://localhost:${PORT}`);
 });
