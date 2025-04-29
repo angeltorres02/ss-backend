@@ -14,10 +14,23 @@ datasource db {
 }
 
 model Formulario {
-  id         String   @id @default(uuid())
+  id         String @id @default(uuid())
   pacienteId String
   medicoId   String
-  tipo       String // Ejemplo: "norton", "mna-sf", "sarc-f"
-  respuestas Json
-  createdAt  DateTime @default(now())
+  tipo       String
+  idForm     String
+}
+
+model Norton {
+  id             String   @id @default(uuid())
+  pacienteId     String
+  medicoId       String
+  preguntaUno    String
+  preguntaDos    String
+  preguntaTres   String
+  preguntaCuatro String
+  preguntaCinco  String
+  preguntaSeis   String
+  preguntaSiete  String
+  createdAt      DateTime @default(now())
 }

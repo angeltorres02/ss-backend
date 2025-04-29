@@ -34,15 +34,11 @@ app.get("/:tipo/:encryptedData", (req, res) => {
     const decryptedText = bytes.toString(CryptoJS.enc.Utf8);
 
     if (!decryptedText) {
-      // Si toString() retorna cadena vacía, la desencriptación falló
       return res
         .status(400)
         .json({ error: "Decryption failed. Possibly malformed data." });
     }
 
-    const decryptedData = JSON.parse(decryptedText);
-
-    // Continúa con la lógica de redirección
     const baseUrl = "http://localhost:3000";
     let redirectPath = "/formulario/not-found";
     if (tipo === "norton") {
@@ -68,14 +64,12 @@ app.listen(PORT, () => {
   console.log(`Express server corriendo en http://localhost:${PORT}`);
 });
 
-// En el mismo server.js (o en otro archivo de rutas)
 const { PrismaClient } = require("@prisma/client");
 const bodyParser = require("body-parser");
 const prisma = new PrismaClient();
 
 app.post("/formulario/add", async (req, res) => {
   try {
-    // Se espera que el cuerpo incluya: pacienteId, medicoId, tipo y respuestas
     const { pacienteId, medicoId, tipo, respuestas } = req.body;
     if (!pacienteId || !medicoId || !tipo || !respuestas) {
       return res.status(400).json({ error: "Datos incompletos" });
@@ -86,7 +80,7 @@ app.post("/formulario/add", async (req, res) => {
         pacienteId,
         medicoId,
         tipo,
-        respuestas, // Contendrá las respuestas completas del formulario
+        respuestas,
       },
     });
 
