@@ -48,6 +48,8 @@ app.get("/:tipo/:encryptedData", (req, res) => {
       redirectPath = "/formulario/sarc";
     } else if (tipo === "barreras") {
       redirectPath = "/formulario/barreras";
+    } else if (tipo === "maltrato") {
+      redirectPath = "/formulario/maltrato";
     }
 
     const redirectUrl = `${baseUrl}${redirectPath}?ed=${encodeURIComponent(
