@@ -40,14 +40,28 @@ app.get("/:tipo/:encryptedData", (req, res) => {
 
     const baseUrl = "http://localhost:3000";
     let redirectPath = "/formulario/not-found";
-    if (tipo === "norton") {
-      redirectPath = "/formulario/norton";
-    } else if (tipo === "mna") {
-      redirectPath = "/formulario/mna";
-    } else if (tipo === "sarc") {
-      redirectPath = "/formulario/sarc";
-    } else if (tipo === "barreras") {
-      redirectPath = "/formulario/barreras";
+
+    switch (tipo) {
+      case "norton":
+        redirectPath = "/formulario/norton";
+        break;
+      case "mna":
+        redirectPath = "/formulario/mna";
+        break;
+      case "sarc":
+        redirectPath = "/formulario/sarc";
+        break;
+      case "barreras":
+        redirectPath = "/formulario/barreras";
+        break;
+      case "maltrato":
+        redirectPath = "/formulario/maltrato";
+        break;
+      case "oars":
+        redirectPath = "/formulario/oars";
+        break;
+      default:
+        redirectPath = "/not-found";
     }
 
     const redirectUrl = `${baseUrl}${redirectPath}?ed=${encodeURIComponent(
