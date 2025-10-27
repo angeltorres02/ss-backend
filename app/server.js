@@ -60,6 +60,10 @@ app.get("/:tipo/:encryptedData", (req, res) => {
       case "oars":
         redirectPath = "/formulario/oars";
         break;
+      case "gds15":
+        redirectPath = "/formulario/gds15";
+        break;
+
       default:
         redirectPath = "/not-found";
     }
