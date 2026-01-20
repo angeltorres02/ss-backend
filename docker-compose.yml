@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   formsDB:
-    image: postgres
+    image: postgres:17.7
     container_name: formsDB
     restart: always
     ports:

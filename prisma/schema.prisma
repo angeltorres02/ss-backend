@@ -18,7 +18,7 @@ model Formulario {
   pacienteId String
   medicoId   String
   tipo       String
-  idForm     String
+  respuestas Json
 }
 
 model Norton {
