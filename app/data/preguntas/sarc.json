@@ -1,0 +1,67 @@
+{
+  "id": "sarc",
+  "nombre": "SARC-F",
+  "descripcion": "Cuestionario de detección de sarcopenia",
+  "version": "1.0.0",
+  "preguntas": [
+    {
+      "id": "1",
+      "pregunta": "¿Qué tanta dificultad tiene para llevar o cargar 4.5 kg?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "1_1", "opcion": "Ninguna", "valor": 1 },
+        { "id": "1_2", "opcion": "Alguna", "valor": 2 },
+        { "id": "1_3", "opcion": "Mucha o incapaz", "valor": 3 }
+      ]
+    },
+    {
+      "id": "2",
+      "pregunta": "¿Qué tanta dificultad tiene para cruzar caminando por un cuarto?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "2_1", "opcion": "Ninguna", "valor": 1 },
+        { "id": "2_2", "opcion": "Alguna", "valor": 2 },
+        {
+          "id": "2_3",
+          "opcion": "Mucha, usando auxiliares o incapaz",
+          "valor": 3
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "pregunta": "¿Qué tanta dificultad tiene para levantarse de una silla o cama?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "3_1", "opcion": "Ninguna", "valor": 1 },
+        { "id": "3_2", "opcion": "Alguna", "valor": 2 },
+        { "id": "3_3", "opcion": "Mucha o incapaz sin ayuda", "valor": 3 }
+      ]
+    },
+    {
+      "id": "4",
+      "pregunta": "¿Qué tanta dificultad tiene para subir 10 escalones?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "4_1", "opcion": "Ninguna", "valor": 1 },
+        { "id": "4_2", "opcion": "Alguna", "valor": 2 },
+        { "id": "4_3", "opcion": "Mucha o incapaz", "valor": 3 }
+      ]
+    },
+    {
+      "id": "5",
+      "pregunta": "¿Cuántas veces se ha caído en el último año?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "5_1", "opcion": "Ninguna", "valor": 1 },
+        { "id": "5_2", "opcion": "1-3 caídas", "valor": 2 },
+        { "id": "5_3", "opcion": "4 o más caídas", "valor": 3 }
+      ]
+    }
+  ]
+}

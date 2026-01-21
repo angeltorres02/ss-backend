@@ -1,0 +1,158 @@
+{
+  "id": "gds15",
+  "nombre": "Escala de Depresión Geriátrica (GDS-15)",
+  "descripcion": "Evaluación de síntomas depresivos en adultos mayores",
+  "version": "1.0.0",
+  "preguntas": [
+    {
+      "id": "1",
+      "pregunta": "¿En general, está satisfecho(a) con su vida?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "1_1", "opcion": "Sí", "valor": 0 },
+        { "id": "1_2", "opcion": "No", "valor": 1 }
+      ]
+    },
+    {
+      "id": "2",
+      "pregunta": "¿Ha abandonado muchas de sus tareas habituales y aficiones?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "2_1", "opcion": "Sí", "valor": 1 },
+        { "id": "2_2", "opcion": "No", "valor": 0 }
+      ]
+    },
+    {
+      "id": "3",
+      "pregunta": "¿Siente que su vida está vacía?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "3_1", "opcion": "Sí", "valor": 1 },
+        { "id": "3_2", "opcion": "No", "valor": 0 }
+      ]
+    },
+    {
+      "id": "4",
+      "pregunta": "¿Se siente con frecuencia aburrido(a)?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "4_1", "opcion": "Sí", "valor": 1 },
+        { "id": "4_2", "opcion": "No", "valor": 0 }
+      ]
+    },
+    {
+      "id": "5",
+      "pregunta": "¿Se encuentra de buen humor la mayor parte del tiempo?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "5_1", "opcion": "Sí", "valor": 0 },
+        { "id": "5_2", "opcion": "No", "valor": 1 }
+      ]
+    },
+    {
+      "id": "6",
+      "pregunta": "¿Teme que algo malo pueda ocurrirle?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "6_1", "opcion": "Sí", "valor": 1 },
+        { "id": "6_2", "opcion": "No", "valor": 0 }
+      ]
+    },
+    {
+      "id": "7",
+      "pregunta": "¿Se siente feliz la mayor parte del tiempo?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "7_1", "opcion": "Sí", "valor": 0 },
+        { "id": "7_2", "opcion": "No", "valor": 1 }
+      ]
+    },
+    {
+      "id": "8",
+      "pregunta": "¿Con frecuencia se siente desamparado(a), desprotegido(a)?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "8_1", "opcion": "Sí", "valor": 1 },
+        { "id": "8_2", "opcion": "No", "valor": 0 }
+      ]
+    },
+    {
+      "id": "9",
+      "pregunta": "¿Prefiere usted quedarse en casa, más que salir y hacer cosas nuevas?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "9_1", "opcion": "Sí", "valor": 1 },
+        { "id": "9_2", "opcion": "No", "valor": 0 }
+      ]
+    },
+    {
+      "id": "10",
+      "pregunta": "¿Cree que tiene más problemas de memoria que la mayoría de la gente?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "10_1", "opcion": "Sí", "valor": 1 },
+        { "id": "10_2", "opcion": "No", "valor": 0 }
+      ]
+    },
+    {
+      "id": "11",
+      "pregunta": "¿En estos momentos, piensa que es estupendo estar vivo(a)?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "11_1", "opcion": "Sí", "valor": 0 },
+        { "id": "11_2", "opcion": "No", "valor": 1 }
+      ]
+    },
+    {
+      "id": "12",
+      "pregunta": "¿Actualmente se siente un(a) inútil?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "12_1", "opcion": "Sí", "valor": 1 },
+        { "id": "12_2", "opcion": "No", "valor": 0 }
+      ]
+    },
+    {
+      "id": "13",
+      "pregunta": "¿Se siente lleno(a) de energía?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "13_1", "opcion": "Sí", "valor": 0 },
+        { "id": "13_2", "opcion": "No", "valor": 1 }
+      ]
+    },
+    {
+      "id": "14",
+      "pregunta": "¿Se siente sin esperanza en este momento?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "14_1", "opcion": "Sí", "valor": 1 },
+        { "id": "14_2", "opcion": "No", "valor": 0 }
+      ]
+    },
+    {
+      "id": "15",
+      "pregunta": "¿Piensa que la mayoría de la gente está en mejor situación que usted?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "15_1", "opcion": "Sí", "valor": 1 },
+        { "id": "15_2", "opcion": "No", "valor": 0 }
+      ]
+    }
+  ]
+}

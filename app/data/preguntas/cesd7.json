@@ -1,0 +1,204 @@
+{
+  "id": "cesd7",
+  "nombre": "Escala de Depresión CES-D 7",
+  "descripcion": "Evaluación de síntomas depresivos - versión corta",
+  "version": "1.0.0",
+  "preguntas": [
+    {
+      "id": "1",
+      "pregunta": "¿Sentía como si no pudiera quitarse la tristeza?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        {
+          "id": "1_1",
+          "opcion": "Rara vez o nunca (menos de 1 día)",
+          "valor": 0
+        },
+        {
+          "id": "1_2",
+          "opcion": "Pocas veces o alguna vez (1-2 días)",
+          "valor": 1
+        },
+        {
+          "id": "1_3",
+          "opcion": "Un número de veces considerable (3-4 días)",
+          "valor": 2
+        },
+        {
+          "id": "1_4",
+          "opcion": "Todo el tiempo o la mayoría del tiempo (5-7 días)",
+          "valor": 3
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "pregunta": "¿Le costaba concentrarse en lo que estaba haciendo?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        {
+          "id": "2_1",
+          "opcion": "Rara vez o nunca (menos de 1 día)",
+          "valor": 0
+        },
+        {
+          "id": "2_2",
+          "opcion": "Pocas veces o alguna vez (1-2 días)",
+          "valor": 1
+        },
+        {
+          "id": "2_3",
+          "opcion": "Un número de veces considerable (3-4 días)",
+          "valor": 2
+        },
+        {
+          "id": "2_4",
+          "opcion": "Todo el tiempo o la mayoría del tiempo (5-7 días)",
+          "valor": 3
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "pregunta": "¿Se sintió deprimido/a?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        {
+          "id": "3_1",
+          "opcion": "Rara vez o nunca (menos de 1 día)",
+          "valor": 0
+        },
+        {
+          "id": "3_2",
+          "opcion": "Pocas veces o alguna vez (1-2 días)",
+          "valor": 1
+        },
+        {
+          "id": "3_3",
+          "opcion": "Un número de veces considerable (3-4 días)",
+          "valor": 2
+        },
+        {
+          "id": "3_4",
+          "opcion": "Todo el tiempo o la mayoría del tiempo (5-7 días)",
+          "valor": 3
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "pregunta": "¿Le parecía que todo lo que hacía era un esfuerzo?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        {
+          "id": "4_1",
+          "opcion": "Rara vez o nunca (menos de 1 día)",
+          "valor": 0
+        },
+        {
+          "id": "4_2",
+          "opcion": "Pocas veces o alguna vez (1-2 días)",
+          "valor": 1
+        },
+        {
+          "id": "4_3",
+          "opcion": "Un número de veces considerable (3-4 días)",
+          "valor": 2
+        },
+        {
+          "id": "4_4",
+          "opcion": "Todo el tiempo o la mayoría del tiempo (5-7 días)",
+          "valor": 3
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "pregunta": "¿No durmió bien?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        {
+          "id": "5_1",
+          "opcion": "Rara vez o nunca (menos de 1 día)",
+          "valor": 0
+        },
+        {
+          "id": "5_2",
+          "opcion": "Pocas veces o alguna vez (1-2 días)",
+          "valor": 1
+        },
+        {
+          "id": "5_3",
+          "opcion": "Un número de veces considerable (3-4 días)",
+          "valor": 2
+        },
+        {
+          "id": "5_4",
+          "opcion": "Todo el tiempo o la mayoría del tiempo (5-7 días)",
+          "valor": 3
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "pregunta": "¿Disfrutó de la vida?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        {
+          "id": "6_1",
+          "opcion": "Todo el tiempo o la mayoría del tiempo (5-7 días)",
+          "valor": 0
+        },
+        {
+          "id": "6_2",
+          "opcion": "Un número de veces considerable (3-4 días)",
+          "valor": 1
+        },
+        {
+          "id": "6_3",
+          "opcion": "Pocas veces o alguna vez (1-2 días)",
+          "valor": 2
+        },
+        {
+          "id": "6_4",
+          "opcion": "Rara vez o nunca (menos de 1 día)",
+          "valor": 3
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "pregunta": "¿Se sintió triste?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        {
+          "id": "7_1",
+          "opcion": "Rara vez o nunca (menos de 1 día)",
+          "valor": 0
+        },
+        {
+          "id": "7_2",
+          "opcion": "Pocas veces o alguna vez (1-2 días)",
+          "valor": 1
+        },
+        {
+          "id": "7_3",
+          "opcion": "Un número de veces considerable (3-4 días)",
+          "valor": 2
+        },
+        {
+          "id": "7_4",
+          "opcion": "Todo el tiempo o la mayoría del tiempo (5-7 días)",
+          "valor": 3
+        }
+      ]
+    }
+  ]
+}

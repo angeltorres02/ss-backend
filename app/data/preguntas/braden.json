@@ -1,0 +1,171 @@
+{
+  "id": "braden",
+  "nombre": "Escala de Braden",
+  "descripcion": "Valoración del riesgo de úlceras por presión",
+  "version": "1.0.0",
+  "preguntas": [
+    {
+      "id": "1",
+      "pregunta": "Percepción Sensorial - Capacidad para responder significativamente a la presión",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        {
+          "id": "1_1",
+          "opcion": "Completamente limitada: Al tener disminuido el nivel de conciencia o estar sedado, el paciente no reacciona ante estímulos dolorosos o capacidad limitada de sentir en la mayor parte del cuerpo",
+          "valor": 1
+        },
+        {
+          "id": "1_2",
+          "opcion": "Muy limitada: Reacciona sólo ante estímulos dolorosos. No puede comunicar su malestar excepto mediante quejidos o agitación, o presenta un déficit sensorial que limita sentir dolor o malestar en más de la mitad del cuerpo",
+          "valor": 2
+        },
+        {
+          "id": "1_3",
+          "opcion": "Ligeramente limitada: Reacciona ante órdenes verbales pero no siempre puede comunicar sus molestias o la necesidad de que le cambien de posición, o presenta alguna dificultad sensorial que limita su capacidad para sentir dolor o malestar en al menos una de las extremidades",
+          "valor": 3
+        },
+        {
+          "id": "1_4",
+          "opcion": "Sin limitaciones: Responde a órdenes verbales. No presenta déficit sensorial que pueda limitar su capacidad de expresar o sentir dolor o malestar",
+          "valor": 4
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "pregunta": "Exposición a la Humedad - Nivel de exposición de la piel a la humedad",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        {
+          "id": "2_1",
+          "opcion": "Constantemente húmeda: La piel se encuentra constantemente expuesta a la humedad por sudoración, orina, etc. Se detecta humedad cada vez que se mueve o gira al paciente",
+          "valor": 1
+        },
+        {
+          "id": "2_2",
+          "opcion": "A menudo húmeda: La piel está a menudo pero no siempre húmeda. La ropa de cama se ha de cambiar al menos una vez en cada turno",
+          "valor": 2
+        },
+        {
+          "id": "2_3",
+          "opcion": "Ocasionalmente húmeda: La piel está ocasionalmente húmeda, requiriendo un cambio suplementario de ropa de cama aproximadamente una vez al día",
+          "valor": 3
+        },
+        {
+          "id": "2_4",
+          "opcion": "Raramente húmeda: La piel está generalmente seca. La ropa de cama se cambia de acuerdo con los intervalos fijados para los cambios de rutina",
+          "valor": 4
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "pregunta": "Actividad - Nivel de actividad física",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        {
+          "id": "3_1",
+          "opcion": "Encamado/a: Paciente constantemente encamado/a",
+          "valor": 1
+        },
+        {
+          "id": "3_2",
+          "opcion": "En silla: Paciente que no puede andar o con deambulación muy limitada. No puede sostener su propio peso y/o necesita ayuda para pasar a una silla o a una silla de ruedas",
+          "valor": 2
+        },
+        {
+          "id": "3_3",
+          "opcion": "Deambula ocasionalmente: Deambula ocasionalmente con o sin ayuda, durante el día pero para distancias muy cortas. Pasa la mayor parte de las horas diurnas en la cama o en silla de ruedas",
+          "valor": 3
+        },
+        {
+          "id": "3_4",
+          "opcion": "Deambula frecuentemente: Deambula fuera de la habitación al menos dos veces al día y dentro de la habitación al menos una vez cada dos horas durante las horas de paseo",
+          "valor": 4
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "pregunta": "Movilidad - Capacidad para cambiar y controlar la posición del cuerpo",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        {
+          "id": "4_1",
+          "opcion": "Completamente inmóvil: Sin ayuda no puede realizar ningún cambio en la posición del cuerpo o de alguna extremidad",
+          "valor": 1
+        },
+        {
+          "id": "4_2",
+          "opcion": "Muy limitada: Ocasionalmente efectúa ligeros cambios en la posición del cuerpo o de las extremidades, pero no es capaz de hacer cambios frecuentes o significativos por sí solo",
+          "valor": 2
+        },
+        {
+          "id": "4_3",
+          "opcion": "Ligeramente limitada: Efectúa con frecuencia ligeros cambios en la posición del cuerpo o de las extremidades por sí solo/a",
+          "valor": 3
+        },
+        {
+          "id": "4_4",
+          "opcion": "Sin limitaciones: Efectúa frecuentemente importantes cambios de posición sin ayuda",
+          "valor": 4
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "pregunta": "Nutrición - Patrón usual de ingesta de alimentos",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        {
+          "id": "5_1",
+          "opcion": "Muy pobre: Nunca ingiere una comida completa. Rara vez toma más de un tercio de cualquier alimento que se le ofrezca. Diariamente come dos servicios o menos con aporte proteico. Bebe pocos líquidos. No toma suplementos dietéticos líquidos, o está en ayunas y/o en dieta líquida o sueros más de cinco días",
+          "valor": 1
+        },
+        {
+          "id": "5_2",
+          "opcion": "Probablemente inadecuada: Rara vez come una comida completa y generalmente come sólo la mitad de los alimentos. La ingesta proteica incluye sólo 3 servicios de carne o productos lácteos por día. Ocasionalmente toma un suplemento dietético, o recibe menos que la cantidad óptima de una dieta líquida o por sonda nasogástrica",
+          "valor": 2
+        },
+        {
+          "id": "5_3",
+          "opcion": "Adecuada: Toma más de la mitad de la mayoría de las comidas. Come un total de 4 servicios al día de proteínas. Ocasionalmente puede rehusar una comida pero tomará un suplemento dietético si se le ofrece, o recibe nutrición por sonda nasogástrica o por vía parenteral, cubriendo la mayoría de sus necesidades nutricionales",
+          "valor": 3
+        },
+        {
+          "id": "5_4",
+          "opcion": "Excelente: Ingiere la mayor parte de cada comida. Nunca rehúsa una comida. Habitualmente come un total de 4 o más servicios de carne y/o productos lácteos. Ocasionalmente come entre horas. No requiere suplementos dietéticos",
+          "valor": 4
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "pregunta": "Roce y Peligro de Lesiones",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        {
+          "id": "6_1",
+          "opcion": "Problema: Requiere de moderada a máxima asistencia para ser movido. Es imposible levantarlo/a completamente sin que se produzca un deslizamiento entre las sábanas. Frecuentemente se desliza hacia abajo en la cama o en la silla, requiriendo de frecuentes reposicionamientos con máxima ayuda. La espasticidad, contracturas o agitación producen un roce casi constante",
+          "valor": 1
+        },
+        {
+          "id": "6_2",
+          "opcion": "Problema potencial: Se mueve muy débilmente o requiere de mínima asistencia. Durante los movimientos, la piel probablemente roza contra parte de las sábanas, silla, sistemas de sujeción u otros objetos. La mayor parte del tiempo mantiene relativamente una buena posición en la silla o en la cama, aunque en ocasiones puede resbalar hacia abajo",
+          "valor": 2
+        },
+        {
+          "id": "6_3",
+          "opcion": "Sin problema aparente: Se mueve en la cama y en la silla con independencia y tiene suficiente fuerza muscular para levantarse completamente cuando se mueve. En todo momento mantiene una buena posición en la cama o en la silla",
+          "valor": 3
+        }
+      ]
+    }
+  ]
+}

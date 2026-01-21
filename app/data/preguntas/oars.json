@@ -1,0 +1,206 @@
+{
+  "id": "oars",
+  "nombre": "OARS - Recursos Sociales",
+  "descripcion": "Evaluación de recursos sociales en adultos mayores",
+  "version": "1.0.0",
+  "preguntas": [
+    {
+      "id": "1",
+      "pregunta": "¿Su estado civil es?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "1_1", "opcion": "Soltero (a)" },
+        { "id": "1_2", "opcion": "Casado (a) o Unión Libre" },
+        { "id": "1_3", "opcion": "Viudo (a)" },
+        { "id": "1_4", "opcion": "Divorciado (a)" },
+        { "id": "1_5", "opcion": "Separado (a)" }
+      ]
+    },
+    {
+      "id": "2",
+      "pregunta": "¿Vive su esposo(a)?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "2_1", "opcion": "No" },
+        { "id": "2_2", "opcion": "Sí" }
+      ]
+    },
+    {
+      "id": "3",
+      "pregunta": "¿Con quién vive usted? (Anote más de un número cuando sea necesario)",
+      "tipo": "checkbox",
+      "requerido": true,
+      "opciones": [
+        { "id": "3_1", "opcion": "Nadie" },
+        { "id": "3_2", "opcion": "Esposo (a)" },
+        { "id": "3_3", "opcion": "Hijos (as)" },
+        { "id": "3_4", "opcion": "Nietos (as)" },
+        { "id": "3_5", "opcion": "Padres" },
+        { "id": "3_6", "opcion": "Hermanos (as)" },
+        {
+          "id": "3_7",
+          "opcion": "Otros familiares políticos no incluidos en las categorías anteriores"
+        },
+        { "id": "3_8", "opcion": "Amigos (as)" },
+        { "id": "3_9", "opcion": "Cuidadores pagados" },
+        { "id": "3_10", "opcion": "Otros (especifique)" }
+      ]
+    },
+    {
+      "id": "4",
+      "pregunta": "¿Con cuántas personas vive?",
+      "tipo": "number",
+      "requerido": true,
+      "validacion": {
+        "min": 0,
+        "max": 50
+      }
+    },
+    {
+      "id": "5",
+      "pregunta": "¿En el último año, cuántas veces visitó a su familia, amigos, durante los fines de semana o las vacaciones, o para ir de compras o de excursión?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "5_1", "opcion": "Nunca" },
+        { "id": "5_2", "opcion": "Cada seis meses" },
+        { "id": "5_3", "opcion": "Cada tres meses" },
+        { "id": "5_4", "opcion": "Cada mes" },
+        {
+          "id": "5_5",
+          "opcion": "Menos de una vez al mes o únicamente en vacaciones"
+        },
+        { "id": "5_6", "opcion": "Menos de una vez a la semana" },
+        { "id": "5_7", "opcion": "1 – 3 veces a la semana" },
+        { "id": "5_8", "opcion": "Más de cuatro veces a la semana" }
+      ]
+    },
+    {
+      "id": "6",
+      "pregunta": "¿A cuántas personas conoce lo suficientemente bien como para visitarles en casa?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "6_1", "opcion": "Ninguna" },
+        { "id": "6_2", "opcion": "Una o dos" },
+        { "id": "6_3", "opcion": "De tres a cuatro" },
+        { "id": "6_4", "opcion": "Cinco o más" }
+      ]
+    },
+    {
+      "id": "7",
+      "pregunta": "¿En la última semana, cuántas veces habló por teléfono con amigos, familiares u otros, ya sea porque les llamará usted o ellos le llamaran? (Aunque el sujeto carezca de teléfono la pregunta sigue haciéndose)",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "7_1", "opcion": "Ninguna vez" },
+        { "id": "7_2", "opcion": "Una vez a la semana" },
+        { "id": "7_3", "opcion": "Dos a seis veces a la semana" },
+        { "id": "7_4", "opcion": "Más de seis veces a la semana" },
+        { "id": "7_5", "opcion": "Una vez al día" }
+      ]
+    },
+    {
+      "id": "8",
+      "pregunta": "¿Cuántas veces en la última semana pasó algún tiempo con alguien que no vive con usted, ya sea porque lo visitaron, usted los visitó o salieron juntos?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "8_1", "opcion": "Ninguna vez" },
+        { "id": "8_2", "opcion": "Una vez" },
+        { "id": "8_3", "opcion": "2 – 6 veces al día" },
+        { "id": "8_4", "opcion": "Más de seis veces al día" }
+      ]
+    },
+    {
+      "id": "9",
+      "pregunta": "¿Tiene alguien en quién confiar?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "9_1", "opcion": "No" },
+        { "id": "9_2", "opcion": "Sí" }
+      ]
+    },
+    {
+      "id": "10",
+      "pregunta": "¿Se encuentra solo(a) o se siente en soledad a menudo, a veces o casi nunca?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "10_1", "opcion": "Casi nunca" },
+        { "id": "10_2", "opcion": "Algunas veces" },
+        { "id": "10_3", "opcion": "A menudo" }
+      ]
+    },
+    {
+      "id": "11",
+      "pregunta": "¿Ve a sus familiares y amigos a menudo como quisiera, o se siente usted algo triste porque los ve poco?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "11_1", "opcion": "Algo triste por la poca frecuencia" },
+        { "id": "11_2", "opcion": "Tan a menudo como quisiera" }
+      ]
+    },
+    {
+      "id": "12",
+      "pregunta": "Si alguna vez necesitase ayuda por encontrarse enfermo(a) o incapacitado(a) ¿Tendría quién le prestase ayuda, por ejemplo: su esposo(a), un miembro de su familia o un amigo(a)?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "12_1", "opcion": "No" },
+        { "id": "12_2", "opcion": "Sí" }
+      ]
+    },
+    {
+      "id": "13",
+      "pregunta": "¿Esa persona cuidaría de usted?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        {
+          "id": "13_1",
+          "opcion": "Sólo de forma pasajera (para ir al médico, haciéndole comida, etc)"
+        },
+        {
+          "id": "13_2",
+          "opcion": "Durante un corto período de tiempo (semanas hasta seis meses)"
+        },
+        { "id": "13_3", "opcion": "De forma indefinida" }
+      ]
+    },
+    {
+      "id": "14",
+      "pregunta": "¿Quién sería esa persona? - Nombre:",
+      "tipo": "text",
+      "requerido": true,
+      "validacion": {
+        "maxLength": 100
+      }
+    },
+    {
+      "id": "15",
+      "pregunta": "¿Quién sería esa persona? - Relación:",
+      "tipo": "text",
+      "requerido": true,
+      "validacion": {
+        "maxLength": 50
+      }
+    },
+    {
+      "id": "16",
+      "pregunta": "¿Cómo considera la convivencia y apoyo de familiares y amigos?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "16_1", "opcion": "Muy insatisfactoria" },
+        { "id": "16_2", "opcion": "Insatisfactoria" },
+        { "id": "16_3", "opcion": "Muy satisfactoria" },
+        { "id": "16_4", "opcion": "Satisfactoria" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,335 @@
+{
+  "id": "maltrato",
+  "nombre": "Cuestionario de Maltrato en Adultos Mayores",
+  "descripcion": "Evaluación de situaciones de maltrato físico, psicológico, económico, sexual y negligencia",
+  "version": "1.0.0",
+  "categorias": ["FÍSICO", "PSICOLÓGICO", "ECONÓMICO", "SEXUAL", "NEGLIGENCIA"],
+  "subpreguntasComunes": {
+    "frecuencia": {
+      "pregunta": "¿Esto ocurrió...?",
+      "tipo": "radio",
+      "opciones": [
+        { "id": "freq_1", "opcion": "Una vez", "valor": 0 },
+        { "id": "freq_2", "opcion": "Pocas veces", "valor": 0 },
+        { "id": "freq_3", "opcion": "Muchas veces", "valor": 0 },
+        { "id": "freq_4", "opcion": "No responde", "valor": 0 }
+      ]
+    },
+    "tiempo": {
+      "pregunta": "¿Desde hace cuántos años ocurre esto?",
+      "tipo": "radio",
+      "opciones": [
+        { "id": "time_1", "opcion": "Un año y menos", "valor": 0 },
+        { "id": "time_2", "opcion": "No recuerda", "valor": 0 }
+      ]
+    },
+    "responsable": {
+      "pregunta": "¿Quién fue el responsable?",
+      "tipo": "radio",
+      "opciones": [
+        { "id": "resp_1", "opcion": "Hijo/a", "valor": 1 },
+        { "id": "resp_2", "opcion": "Cónyuge/Pareja", "valor": 2 },
+        { "id": "resp_3", "opcion": "Nieto/a", "valor": 3 },
+        { "id": "resp_4", "opcion": "Cuidador/a", "valor": 4 },
+        { "id": "resp_5", "opcion": "Otro familiar", "valor": 5 },
+        { "id": "resp_6", "opcion": "No familiar", "valor": 6 }
+      ]
+    },
+    "genero": {
+      "pregunta": "¿Es hombre o mujer?",
+      "tipo": "radio",
+      "opciones": [
+        { "id": "gen_1", "opcion": "Hombre", "valor": 0 },
+        { "id": "gen_2", "opcion": "Mujer", "valor": 0 }
+      ]
+    }
+  },
+  "preguntas": [
+    {
+      "id": "1",
+      "categoria": "FÍSICO",
+      "pregunta": "¿Le han golpeado?",
+      "tipo": "radio",
+      "requerido": true,
+      "tieneSubpreguntas": true,
+      "opciones": [
+        { "id": "1_1", "opcion": "Sí", "valor": 2 },
+        { "id": "1_2", "opcion": "No", "valor": 1 }
+      ],
+      "subpreguntas": ["frecuencia", "tiempo", "responsable", "genero"]
+    },
+    {
+      "id": "2",
+      "categoria": "FÍSICO",
+      "pregunta": "¿Le han dado puñetazos o patadas?",
+      "tipo": "radio",
+      "requerido": true,
+      "tieneSubpreguntas": true,
+      "opciones": [
+        { "id": "2_1", "opcion": "Sí", "valor": 2 },
+        { "id": "2_2", "opcion": "No", "valor": 1 }
+      ],
+      "subpreguntas": ["frecuencia", "tiempo", "responsable", "genero"]
+    },
+    {
+      "id": "3",
+      "categoria": "FÍSICO",
+      "pregunta": "¿Le han empujado o le han jalado el pelo?",
+      "tipo": "radio",
+      "requerido": true,
+      "tieneSubpreguntas": true,
+      "opciones": [
+        { "id": "3_1", "opcion": "Sí", "valor": 2 },
+        { "id": "3_2", "opcion": "No", "valor": 1 }
+      ],
+      "subpreguntas": ["frecuencia", "tiempo", "responsable", "genero"]
+    },
+    {
+      "id": "4",
+      "categoria": "FÍSICO",
+      "pregunta": "¿Le han aventado algún objeto?",
+      "tipo": "radio",
+      "requerido": true,
+      "tieneSubpreguntas": true,
+      "opciones": [
+        { "id": "4_1", "opcion": "Sí", "valor": 2 },
+        { "id": "4_2", "opcion": "No", "valor": 1 }
+      ],
+      "subpreguntas": ["frecuencia", "tiempo", "responsable", "genero"]
+    },
+    {
+      "id": "5",
+      "categoria": "FÍSICO",
+      "pregunta": "¿Le han agredido con algún cuchillo o navaja?",
+      "tipo": "radio",
+      "requerido": true,
+      "tieneSubpreguntas": true,
+      "opciones": [
+        { "id": "5_1", "opcion": "Sí", "valor": 2 },
+        { "id": "5_2", "opcion": "No", "valor": 1 }
+      ],
+      "subpreguntas": ["frecuencia", "tiempo", "responsable", "genero"]
+    },
+    {
+      "id": "6",
+      "categoria": "PSICOLÓGICO",
+      "pregunta": "¿Le han humillado o se han burlado de usted?",
+      "tipo": "radio",
+      "requerido": true,
+      "tieneSubpreguntas": true,
+      "opciones": [
+        { "id": "6_1", "opcion": "Sí", "valor": 2 },
+        { "id": "6_2", "opcion": "No", "valor": 1 }
+      ],
+      "subpreguntas": ["frecuencia", "tiempo", "responsable", "genero"]
+    },
+    {
+      "id": "7",
+      "categoria": "PSICOLÓGICO",
+      "pregunta": "¿Le han tratado con indiferencia o le han ignorado?",
+      "tipo": "radio",
+      "requerido": true,
+      "tieneSubpreguntas": true,
+      "opciones": [
+        { "id": "7_1", "opcion": "Sí", "valor": 2 },
+        { "id": "7_2", "opcion": "No", "valor": 1 }
+      ],
+      "subpreguntas": ["frecuencia", "tiempo", "responsable", "genero"]
+    },
+    {
+      "id": "8",
+      "categoria": "PSICOLÓGICO",
+      "pregunta": "¿Le han aislado o le han corrido de la casa?",
+      "tipo": "radio",
+      "requerido": true,
+      "tieneSubpreguntas": true,
+      "opciones": [
+        { "id": "8_1", "opcion": "Sí", "valor": 2 },
+        { "id": "8_2", "opcion": "No", "valor": 1 }
+      ],
+      "subpreguntas": ["frecuencia", "tiempo", "responsable", "genero"]
+    },
+    {
+      "id": "9",
+      "categoria": "PSICOLÓGICO",
+      "pregunta": "¿Le han hecho sentir miedo?",
+      "tipo": "radio",
+      "requerido": true,
+      "tieneSubpreguntas": true,
+      "opciones": [
+        { "id": "9_1", "opcion": "Sí", "valor": 2 },
+        { "id": "9_2", "opcion": "No", "valor": 1 }
+      ],
+      "subpreguntas": ["frecuencia", "tiempo", "responsable", "genero"]
+    },
+    {
+      "id": "10",
+      "categoria": "PSICOLÓGICO",
+      "pregunta": "¿Le han amenazado con castigarlo/a o privarlo/a de algo?",
+      "tipo": "radio",
+      "requerido": true,
+      "tieneSubpreguntas": true,
+      "opciones": [
+        { "id": "10_1", "opcion": "Sí", "valor": 2 },
+        { "id": "10_2", "opcion": "No", "valor": 1 }
+      ],
+      "subpreguntas": ["frecuencia", "tiempo", "responsable", "genero"]
+    },
+    {
+      "id": "11",
+      "categoria": "ECONÓMICO",
+      "pregunta": "¿Le han robado dinero o alguna de sus pertenencias?",
+      "tipo": "radio",
+      "requerido": true,
+      "tieneSubpreguntas": true,
+      "opciones": [
+        { "id": "11_1", "opcion": "Sí", "valor": 2 },
+        { "id": "11_2", "opcion": "No", "valor": 1 }
+      ],
+      "subpreguntas": ["frecuencia", "tiempo", "responsable", "genero"]
+    },
+    {
+      "id": "12",
+      "categoria": "ECONÓMICO",
+      "pregunta": "¿Alguien ha hecho mal uso de su dinero?",
+      "tipo": "radio",
+      "requerido": true,
+      "tieneSubpreguntas": true,
+      "opciones": [
+        { "id": "12_1", "opcion": "Sí", "valor": 2 },
+        { "id": "12_2", "opcion": "No", "valor": 1 }
+      ],
+      "subpreguntas": ["frecuencia", "tiempo", "responsable", "genero"]
+    },
+    {
+      "id": "13",
+      "categoria": "ECONÓMICO",
+      "pregunta": "¿Alguien le ha quitado su dinero o sus propiedades sin su consentimiento?",
+      "tipo": "radio",
+      "requerido": true,
+      "tieneSubpreguntas": true,
+      "opciones": [
+        { "id": "13_1", "opcion": "Sí", "valor": 2 },
+        { "id": "13_2", "opcion": "No", "valor": 1 }
+      ],
+      "subpreguntas": ["frecuencia", "tiempo", "responsable", "genero"]
+    },
+    {
+      "id": "14",
+      "categoria": "ECONÓMICO",
+      "pregunta": "¿Le han presionado para que deje su patrimonio a alguien?",
+      "tipo": "radio",
+      "requerido": true,
+      "tieneSubpreguntas": true,
+      "opciones": [
+        { "id": "14_1", "opcion": "Sí", "valor": 2 },
+        { "id": "14_2", "opcion": "No", "valor": 1 }
+      ],
+      "subpreguntas": ["frecuencia", "tiempo", "responsable", "genero"]
+    },
+    {
+      "id": "15",
+      "categoria": "ECONÓMICO",
+      "pregunta": "¿Le han obligado a firmar documentos que afectan su patrimonio?",
+      "tipo": "radio",
+      "requerido": true,
+      "tieneSubpreguntas": true,
+      "opciones": [
+        { "id": "15_1", "opcion": "Sí", "valor": 2 },
+        { "id": "15_2", "opcion": "No", "valor": 1 }
+      ],
+      "subpreguntas": ["frecuencia", "tiempo", "responsable", "genero"]
+    },
+    {
+      "id": "16",
+      "categoria": "SEXUAL",
+      "pregunta": "¿Le han obligado a ver material pornográfico contra su voluntad?",
+      "tipo": "radio",
+      "requerido": true,
+      "tieneSubpreguntas": true,
+      "opciones": [
+        { "id": "16_1", "opcion": "Sí", "valor": 2 },
+        { "id": "16_2", "opcion": "No", "valor": 1 }
+      ],
+      "subpreguntas": ["frecuencia", "tiempo", "responsable", "genero"]
+    },
+    {
+      "id": "17",
+      "categoria": "SEXUAL",
+      "pregunta": "¿Le han obligado a tener actividad sexual contra su voluntad?",
+      "tipo": "radio",
+      "requerido": true,
+      "tieneSubpreguntas": true,
+      "opciones": [
+        { "id": "17_1", "opcion": "Sí", "valor": 2 },
+        { "id": "17_2", "opcion": "No", "valor": 1 }
+      ],
+      "subpreguntas": ["frecuencia", "tiempo", "responsable", "genero"]
+    },
+    {
+      "id": "18",
+      "categoria": "NEGLIGENCIA",
+      "pregunta": "¿Le han dejado de dar alimentos?",
+      "tipo": "radio",
+      "requerido": true,
+      "tieneSubpreguntas": true,
+      "opciones": [
+        { "id": "18_1", "opcion": "Sí", "valor": 2 },
+        { "id": "18_2", "opcion": "No", "valor": 1 }
+      ],
+      "subpreguntas": ["frecuencia", "tiempo", "responsable", "genero"]
+    },
+    {
+      "id": "19",
+      "categoria": "NEGLIGENCIA",
+      "pregunta": "¿Le han negado el acceso a servicios de salud?",
+      "tipo": "radio",
+      "requerido": true,
+      "tieneSubpreguntas": true,
+      "opciones": [
+        { "id": "19_1", "opcion": "Sí", "valor": 2 },
+        { "id": "19_2", "opcion": "No", "valor": 1 }
+      ],
+      "subpreguntas": ["frecuencia", "tiempo", "responsable", "genero"]
+    },
+    {
+      "id": "20",
+      "categoria": "NEGLIGENCIA",
+      "pregunta": "¿Le han negado el acceso a medicamentos?",
+      "tipo": "radio",
+      "requerido": true,
+      "tieneSubpreguntas": true,
+      "opciones": [
+        { "id": "20_1", "opcion": "Sí", "valor": 2 },
+        { "id": "20_2", "opcion": "No", "valor": 1 }
+      ],
+      "subpreguntas": ["frecuencia", "tiempo", "responsable", "genero"]
+    },
+    {
+      "id": "21",
+      "categoria": "NEGLIGENCIA",
+      "pregunta": "¿Le han dejado solo/a por períodos prolongados?",
+      "tipo": "radio",
+      "requerido": true,
+      "tieneSubpreguntas": true,
+      "opciones": [
+        { "id": "21_1", "opcion": "Sí", "valor": 2 },
+        { "id": "21_2", "opcion": "No", "valor": 1 }
+      ],
+      "subpreguntas": ["frecuencia", "tiempo", "responsable", "genero"]
+    },
+    {
+      "id": "22",
+      "categoria": "NEGLIGENCIA",
+      "pregunta": "¿Le han negado protección cuando la ha necesitado?",
+      "tipo": "radio",
+      "requerido": true,
+      "tieneSubpreguntas": true,
+      "opciones": [
+        { "id": "22_1", "opcion": "Sí", "valor": 2 },
+        { "id": "22_2", "opcion": "No", "valor": 1 }
+      ],
+      "subpreguntas": ["frecuencia", "tiempo", "responsable", "genero"]
+    }
+  ]
+}

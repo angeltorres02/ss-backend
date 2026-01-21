@@ -1,0 +1,171 @@
+{
+  "id": "frail",
+  "nombre": "Escala FRAIL",
+  "descripcion": "Evaluación de fragilidad en adultos mayores",
+  "version": "1.0.0",
+  "preguntas": [
+    {
+      "id": "1",
+      "pregunta": "En las últimas 4 semanas, ¿Qué tanto tiempo se sintió fatigado/a?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "1_1", "opcion": "Todo el tiempo", "valor": 1 },
+        { "id": "1_2", "opcion": "La mayor parte del tiempo", "valor": 1 },
+        { "id": "1_3", "opcion": "Algo de tiempo", "valor": 0 },
+        { "id": "1_4", "opcion": "Muy poco tiempo", "valor": 0 },
+        { "id": "1_5", "opcion": "Nada de tiempo", "valor": 0 }
+      ]
+    },
+    {
+      "id": "2",
+      "pregunta": "Usted solo sin ningún auxiliar como bastón o andadera; ¿Tiene dificultad para subir 10 escalones (una escalera)?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "2_1", "opcion": "Sí", "valor": 1 },
+        { "id": "2_2", "opcion": "No", "valor": 0 }
+      ]
+    },
+    {
+      "id": "3",
+      "pregunta": "Usted solo sin ningún auxiliar como bastón o andadera; ¿Tiene dificultad para caminar 100 metros (dos cuadras sin descansar)?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "3_1", "opcion": "Sí", "valor": 1 },
+        { "id": "3_2", "opcion": "No", "valor": 0 }
+      ]
+    },
+    {
+      "id": "4",
+      "pregunta": "¿Algún doctor o médico le ha comentado que tiene hipertensión arterial sistémica?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "4_1", "opcion": "Sí", "valor": 1 },
+        { "id": "4_2", "opcion": "No", "valor": 0 }
+      ]
+    },
+    {
+      "id": "5",
+      "pregunta": "¿Algún doctor o médico le ha comentado que tiene diabetes?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "5_1", "opcion": "Sí", "valor": 1 },
+        { "id": "5_2", "opcion": "No", "valor": 0 }
+      ]
+    },
+    {
+      "id": "6",
+      "pregunta": "¿Algún doctor o médico le ha comentado que tiene cáncer (otro que no sea un cáncer menor en piel)?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "6_1", "opcion": "Sí", "valor": 1 },
+        { "id": "6_2", "opcion": "No", "valor": 0 }
+      ]
+    },
+    {
+      "id": "7",
+      "pregunta": "¿Algún doctor o médico le ha comentado que tiene enfermedad pulmonar crónica?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "7_1", "opcion": "Sí", "valor": 1 },
+        { "id": "7_2", "opcion": "No", "valor": 0 }
+      ]
+    },
+    {
+      "id": "8",
+      "pregunta": "¿Algún doctor o médico le ha comentado que tiene cardiopatía isquémica?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "8_1", "opcion": "Sí", "valor": 1 },
+        { "id": "8_2", "opcion": "No", "valor": 0 }
+      ]
+    },
+    {
+      "id": "9",
+      "pregunta": "¿Algún doctor o médico le ha comentado que tiene insuficiencia cardíaca congestiva?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "9_1", "opcion": "Sí", "valor": 1 },
+        { "id": "9_2", "opcion": "No", "valor": 0 }
+      ]
+    },
+    {
+      "id": "10",
+      "pregunta": "¿Algún doctor o médico le ha comentado que tiene angina?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "10_1", "opcion": "Sí", "valor": 1 },
+        { "id": "10_2", "opcion": "No", "valor": 0 }
+      ]
+    },
+    {
+      "id": "11",
+      "pregunta": "¿Algún doctor o médico le ha comentado que tiene asma?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "11_1", "opcion": "Sí", "valor": 1 },
+        { "id": "11_2", "opcion": "No", "valor": 0 }
+      ]
+    },
+    {
+      "id": "12",
+      "pregunta": "¿Algún doctor o médico le ha comentado que tiene artritis (incluyendo osteoartrosis y artritis reumatoide)?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "12_1", "opcion": "Sí", "valor": 1 },
+        { "id": "12_2", "opcion": "No", "valor": 0 }
+      ]
+    },
+    {
+      "id": "13",
+      "pregunta": "¿Algún doctor o médico le ha comentado que tiene enfermedad vascular cerebral (embolia)?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "13_1", "opcion": "Sí", "valor": 1 },
+        { "id": "13_2", "opcion": "No", "valor": 0 }
+      ]
+    },
+    {
+      "id": "14",
+      "pregunta": "¿Algún doctor o médico le ha comentado que tiene enfermedad renal crónica?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "14_1", "opcion": "Sí", "valor": 1 },
+        { "id": "14_2", "opcion": "No", "valor": 0 }
+      ]
+    },
+    {
+      "id": "15",
+      "pregunta": "¿Cuánto pesa actualmente con su ropa sin zapatos? (kg)",
+      "tipo": "number",
+      "requerido": true,
+      "validacion": {
+        "min": 20,
+        "max": 300
+      }
+    },
+    {
+      "id": "16",
+      "pregunta": "Hace un año ¿Cuánto pesaba con ropa y sin zapatos? (kg)",
+      "tipo": "number",
+      "requerido": true,
+      "validacion": {
+        "min": 20,
+        "max": 300
+      }
+    }
+  ]
+}

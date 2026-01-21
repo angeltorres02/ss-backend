@@ -1,0 +1,533 @@
+{
+  "id": "barreras",
+  "nombre": "Barreras para la Movilidad y Participación Social",
+  "descripcion": "Evaluación de barreras ambientales y sociales en adultos mayores",
+  "version": "1.0.0",
+  "categorias": [
+    "Movilidad dentro de su domicilio",
+    "Movilidad fuera de su domicilio",
+    "Barreras para la actividad física",
+    "Barreras para la participación social",
+    "Barreras para la movilidad en el transporte",
+    "Dispositivos auxiliares"
+  ],
+  "preguntas": [
+    {
+      "id": "1",
+      "categoria": "Movilidad dentro de su domicilio",
+      "pregunta": "¿En su hogar existe el espacio suficiente para permitir su libre movimiento?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "1_1", "opcion": "Si", "valor": 1 },
+        { "id": "1_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "2",
+      "categoria": "Movilidad dentro de su domicilio",
+      "pregunta": "De acuerdo a su condición de salud, ¿Su vivienda está adaptada para una persona mayor, (superficies lisas, pasillos lo suficientemente anchos para su silla de ruedas, cocina diseñada de manera acorde)?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "2_1", "opcion": "Si", "valor": 1 },
+        { "id": "2_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "3",
+      "categoria": "Movilidad dentro de su domicilio",
+      "pregunta": "¿Considera que su vivienda es la idónea de acuerdo a su condición de salud?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "3_1", "opcion": "Si", "valor": 1 },
+        { "id": "3_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "4",
+      "categoria": "Movilidad dentro de su domicilio",
+      "pregunta": "¿El equipamiento para modificar su vivienda está disponible?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "4_1", "opcion": "Si", "valor": 1 },
+        { "id": "4_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "5",
+      "categoria": "Movilidad dentro de su domicilio",
+      "pregunta": "¿Está usted en posibilidades de cambiar a una vivienda mejor adaptada de acuerdo a su condición de salud?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "5_1", "opcion": "Si", "valor": 1 },
+        { "id": "5_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "6",
+      "categoria": "Movilidad fuera de su domicilio",
+      "pregunta": "Cuando usted sale del hogar, ¿Considera que puede realizar su traslado sin problemas?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "6_1", "opcion": "Si", "valor": 1 },
+        { "id": "6_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "7",
+      "categoria": "Movilidad fuera de su domicilio",
+      "pregunta": "¿El camino para los peatones está libre de obstrucciones?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "7_1", "opcion": "Si", "valor": 1 },
+        { "id": "7_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "8",
+      "categoria": "Movilidad fuera de su domicilio",
+      "pregunta": "¿En su comunidad, las aceras presentan un correcto mantenimiento?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "8_1", "opcion": "Si", "valor": 1 },
+        { "id": "8_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "9",
+      "categoria": "Movilidad fuera de su domicilio",
+      "pregunta": "En su comunidad, ¿Las aceras están libres de obstrucciones (por ejemplo, vendedores ambulantes, vehículos estacionados, árboles)?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "9_1", "opcion": "Si", "valor": 1 },
+        { "id": "9_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "10",
+      "categoria": "Movilidad fuera de su domicilio",
+      "pregunta": "¿Usted considera que las normas y reglas de tránsito se respetan?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "10_1", "opcion": "Si", "valor": 1 },
+        { "id": "10_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "11",
+      "categoria": "Movilidad fuera de su domicilio",
+      "pregunta": "¿Los edificios públicos que usted visita son accesibles?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "11_1", "opcion": "Si", "valor": 1 },
+        { "id": "11_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "12",
+      "categoria": "Barreras para la actividad física",
+      "pregunta": "¿Usted realiza actividad física en la comunidad y/o en el hogar?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "12_1", "opcion": "Si", "valor": 1 },
+        { "id": "12_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "13",
+      "categoria": "Barreras para la actividad física",
+      "pregunta": "¿Usted se encuentra interesado en realizar actividad física?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "13_1", "opcion": "Si", "valor": 1 },
+        { "id": "13_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "14",
+      "categoria": "Barreras para la actividad física",
+      "pregunta": "¿Considera que su situación de salud le permite realizar actividad física?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "14_1", "opcion": "Si", "valor": 1 },
+        { "id": "14_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "15",
+      "categoria": "Barreras para la actividad física",
+      "pregunta": "¿En su comunidad se promueve la actividad física?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "15_1", "opcion": "Si", "valor": 1 },
+        { "id": "15_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "16",
+      "categoria": "Barreras para la actividad física",
+      "pregunta": "¿Considera que las instalaciones para hacer actividad física en su comunidad toman en cuenta las preferencias o necesidades de las personas mayores?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "16_1", "opcion": "Si", "valor": 1 },
+        { "id": "16_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "17",
+      "categoria": "Barreras para la actividad física",
+      "pregunta": "¿Considera que su comunidad es segura para realizar actividad física?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "17_1", "opcion": "Si", "valor": 1 },
+        { "id": "17_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "18",
+      "categoria": "Barreras para la actividad física",
+      "pregunta": "¿Considera que el flujo vehicular en su colonia le permite realizar actividad física?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "18_1", "opcion": "Si", "valor": 1 },
+        { "id": "18_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "19",
+      "categoria": "Barreras para la actividad física",
+      "pregunta": "¿Tiene usted el tiempo para realizar actividad física?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "19_1", "opcion": "Si", "valor": 1 },
+        { "id": "19_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "20",
+      "categoria": "Barreras para la actividad física",
+      "pregunta": "¿Sabe usted cómo iniciar un programa seguro de actividad física en casa?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "20_1", "opcion": "Si", "valor": 1 },
+        { "id": "20_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "21",
+      "categoria": "Barreras para la actividad física",
+      "pregunta": "¿En su lugar de trabajo se promueve la actividad física?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "21_1", "opcion": "Si", "valor": 1 },
+        { "id": "21_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "22",
+      "categoria": "Barreras para la actividad física",
+      "pregunta": "¿Usted realiza actividad física en su trabajo?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "22_1", "opcion": "Si", "valor": 1 },
+        { "id": "22_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "23",
+      "categoria": "Barreras para la actividad física",
+      "pregunta": "Cuando usted ha acudido a consulta, ¿Le han prescrito realizar actividad física?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "23_1", "opcion": "Si", "valor": 1 },
+        { "id": "23_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "24",
+      "categoria": "Barreras para la participación social",
+      "pregunta": "¿Conoce usted los lugares de encuentro que incluyan a personas mayores en su comunidad (centros recreativos, escuelas, bibliotecas, centros comunitarios, parques o jardines)?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "24_1", "opcion": "Si", "valor": 1 },
+        { "id": "24_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "25",
+      "categoria": "Barreras para la participación social",
+      "pregunta": "¿Los sectores público y privado realizan actividades de participación para adultos mayores en su comunidad?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "25_1", "opcion": "Si", "valor": 1 },
+        { "id": "25_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "26",
+      "categoria": "Barreras para la participación social",
+      "pregunta": "¿Usted participa en actividades comunitarias: (recreación, actividades físicas, sociales o espirituales)?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "26_1", "opcion": "Si", "valor": 1 },
+        { "id": "26_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "27",
+      "categoria": "Barreras para la participación social",
+      "pregunta": "¿Considera que la ubicación es conveniente para usted?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "27_1", "opcion": "Si", "valor": 1 },
+        { "id": "27_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "28",
+      "categoria": "Barreras para la participación social",
+      "pregunta": "¿Considera que el horario es conveniente?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "28_1", "opcion": "Si", "valor": 1 },
+        { "id": "28_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "29",
+      "categoria": "Barreras para la participación social",
+      "pregunta": "¿La admisión para participar es abierta?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "29_1", "opcion": "Si", "valor": 1 },
+        { "id": "29_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "30",
+      "categoria": "Barreras para la participación social",
+      "pregunta": "¿El precio para participar constituye algún problema para usted?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "30_1", "opcion": "Si", "valor": 1 },
+        { "id": "30_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "31",
+      "categoria": "Barreras para la participación social",
+      "pregunta": "¿Conoce usted la gama de actividades que puede realizar en su comunidad?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "31_1", "opcion": "Si", "valor": 1 },
+        { "id": "31_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "32",
+      "categoria": "Barreras para la participación social",
+      "pregunta": "¿Tiene interés en llevarlas a cabo?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "32_1", "opcion": "Si", "valor": 1 },
+        { "id": "32_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "33",
+      "categoria": "Barreras para la participación social",
+      "pregunta": "¿Considera usted que las actividades alientan/estimulan la participación de personas de diferentes edades?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "33_1", "opcion": "Si", "valor": 1 },
+        { "id": "33_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "34",
+      "categoria": "Barreras para la participación social",
+      "pregunta": "¿Las instalaciones de dichos lugares de encuentro promueven el uso compartido para personas de distintas edades?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "34_1", "opcion": "Si", "valor": 1 },
+        { "id": "34_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "35",
+      "categoria": "Barreras para la participación social",
+      "pregunta": "¿Los lugares de encuentro y las actividades locales promueven el acercamiento e intercambio entre los vecinos?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "35_1", "opcion": "Si", "valor": 1 },
+        { "id": "35_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "36",
+      "categoria": "Barreras para la movilidad en el transporte",
+      "pregunta": "¿El transporte público es accesible en cuanto a precio?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "36_1", "opcion": "Si", "valor": 1 },
+        { "id": "36_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "37",
+      "categoria": "Barreras para la movilidad en el transporte",
+      "pregunta": "¿Considera que el transporte público es confiable y frecuente?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "37_1", "opcion": "Si", "valor": 1 },
+        { "id": "37_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "38",
+      "categoria": "Barreras para la movilidad en el transporte",
+      "pregunta": "¿Considera que las rutas de transportes son adecuadas de acuerdo a sus necesidades?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "38_1", "opcion": "Si", "valor": 1 },
+        { "id": "38_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "39",
+      "categoria": "Barreras para la movilidad en el transporte",
+      "pregunta": "De acuerdo a su condición de salud, ¿considera que los vehículos son accesibles?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "39_1", "opcion": "Si", "valor": 1 },
+        { "id": "39_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "40",
+      "categoria": "Barreras para la movilidad en el transporte",
+      "pregunta": "¿Considera que las paradas del transporte son adecuadas?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "40_1", "opcion": "Si", "valor": 1 },
+        { "id": "40_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "41",
+      "categoria": "Barreras para la movilidad en el transporte",
+      "pregunta": "¿Considera usted que la actitud del conductor al manejar es la correcta?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "41_1", "opcion": "Si", "valor": 1 },
+        { "id": "41_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "42",
+      "categoria": "Barreras para la movilidad en el transporte",
+      "pregunta": "¿Considera usted que los caminos en su comunidad presentan buen estado de conservación?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "42_1", "opcion": "Si", "valor": 1 },
+        { "id": "42_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "43",
+      "categoria": "Dispositivos auxiliares",
+      "pregunta": "¿Le han prescrito dispositivos auxiliares o ayudas técnicas?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "43_1", "opcion": "Si", "valor": 1 },
+        { "id": "43_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "44",
+      "categoria": "Dispositivos auxiliares",
+      "pregunta": "¿Usted considera que requiere de algo?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "44_1", "opcion": "Si", "valor": 1 },
+        { "id": "44_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "45",
+      "categoria": "Dispositivos auxiliares",
+      "pregunta": "¿Dispone de ello?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "45_1", "opcion": "Si", "valor": 1 },
+        { "id": "45_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "46",
+      "categoria": "Dispositivos auxiliares",
+      "pregunta": "¿Se los han ofrecido de manera gratuita en alguna dependencia del gobierno?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "46_1", "opcion": "Si", "valor": 1 },
+        { "id": "46_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "47",
+      "categoria": "Dispositivos auxiliares",
+      "pregunta": "¿Ha acudido a algún otro lugar para que le apoyen con ello?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "47_1", "opcion": "Si", "valor": 1 },
+        { "id": "47_2", "opcion": "No", "valor": 2 }
+      ]
+    }
+  ]
+}

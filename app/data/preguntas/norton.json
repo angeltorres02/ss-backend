@@ -1,0 +1,68 @@
+{
+  "id": "norton",
+  "nombre": "Escala de Norton",
+  "descripcion": "Valoración del riesgo de úlceras por presión",
+  "version": "1.0.0",
+  "preguntas": [
+    {
+      "id": "1",
+      "pregunta": "Estado físico",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "1_1", "opcion": "Bueno", "valor": 4 },
+        { "id": "1_2", "opcion": "Débil", "valor": 3 },
+        { "id": "1_3", "opcion": "Malo", "valor": 2 },
+        { "id": "1_4", "opcion": "Muy mala", "valor": 1 }
+      ]
+    },
+    {
+      "id": "2",
+      "pregunta": "Estado mental",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "2_1", "opcion": "Alerta", "valor": 4 },
+        { "id": "2_2", "opcion": "Apático", "valor": 3 },
+        { "id": "2_3", "opcion": "Confuso", "valor": 2 },
+        { "id": "2_4", "opcion": "Estuporoso", "valor": 1 }
+      ]
+    },
+    {
+      "id": "3",
+      "pregunta": "Actividad",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "3_1", "opcion": "Camina", "valor": 4 },
+        { "id": "3_2", "opcion": "Camina con ayuda", "valor": 3 },
+        { "id": "3_3", "opcion": "En silla de ruedas", "valor": 2 },
+        { "id": "3_4", "opcion": "En cama", "valor": 1 }
+      ]
+    },
+    {
+      "id": "4",
+      "pregunta": "Movilidad",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "4_1", "opcion": "Completa", "valor": 4 },
+        { "id": "4_2", "opcion": "Limitada ligeramente", "valor": 3 },
+        { "id": "4_3", "opcion": "Muy limitada", "valor": 2 },
+        { "id": "4_4", "opcion": "Inmovil", "valor": 1 }
+      ]
+    },
+    {
+      "id": "5",
+      "pregunta": "Incontinencia",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "5_1", "opcion": "No hay", "valor": 4 },
+        { "id": "5_2", "opcion": "Ocasional", "valor": 3 },
+        { "id": "5_3", "opcion": "Usualmente urinaria", "valor": 2 },
+        { "id": "5_4", "opcion": "Doble incontinencia", "valor": 1 }
+      ]
+    }
+  ]
+}

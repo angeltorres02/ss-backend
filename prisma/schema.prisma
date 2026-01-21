@@ -1,9 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -14,23 +8,10 @@ datasource db {
 }
 
 model Formulario {
-  id         String @id @default(uuid())
+  id         String   @id @default(uuid())
   pacienteId String
   medicoId   String
   tipo       String
   respuestas Json
-}
-
-model Norton {
-  id             String   @id @default(uuid())
-  pacienteId     String
-  medicoId       String
-  preguntaUno    String
-  preguntaDos    String
-  preguntaTres   String
-  preguntaCuatro String
-  preguntaCinco  String
-  preguntaSeis   String
-  preguntaSiete  String
-  createdAt      DateTime @default(now())
+  createdAt  DateTime @default(now())
 }

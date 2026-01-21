@@ -1,0 +1,85 @@
+{
+  "id": "mna",
+  "nombre": "Mini Nutritional Assessment (MNA)",
+  "descripcion": "Evaluación del estado nutricional en adultos mayores",
+  "version": "1.0.0",
+  "preguntas": [
+    {
+      "id": "1",
+      "pregunta": "Ha perdido el apetito? Ha comido menos por falta de apetito, problemas digestivos, dificultades de masticación o deglución en los últimos 3 meses?",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "1_1", "opcion": "Ha comido mucho menos", "valor": 1 },
+        { "id": "1_2", "opcion": "Ha comido menos", "valor": 2 },
+        { "id": "1_3", "opcion": "Ha comido igual", "valor": 3 }
+      ]
+    },
+    {
+      "id": "2",
+      "pregunta": "Pérdida reciente de peso (< 3 meses)",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "2_1", "opcion": "Pérdida de peso > 3 kg", "valor": 1 },
+        { "id": "2_2", "opcion": "No lo sabe", "valor": 2 },
+        { "id": "2_3", "opcion": "Pérdida de peso entre 1 y 3 kg", "valor": 3 },
+        { "id": "2_4", "opcion": "No ha habido pérdida de peso", "valor": 4 }
+      ]
+    },
+    {
+      "id": "3",
+      "pregunta": "Movilidad",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "3_1", "opcion": "De la cama al sillón", "valor": 1 },
+        { "id": "3_2", "opcion": "Autonomía en el interior", "valor": 2 },
+        { "id": "3_3", "opcion": "Sale del domicilio", "valor": 3 }
+      ]
+    },
+    {
+      "id": "4",
+      "pregunta": "Ha tenido una enfermedad aguda o situación de estrés psicológico en los últimos 3 meses",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "4_1", "opcion": "Sí", "valor": 1 },
+        { "id": "4_2", "opcion": "No", "valor": 2 }
+      ]
+    },
+    {
+      "id": "5",
+      "pregunta": "Problemas neuropsicológicos",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "5_1", "opcion": "Demencia o depresión grave", "valor": 1 },
+        { "id": "5_2", "opcion": "Demencia moderada", "valor": 2 },
+        { "id": "5_3", "opcion": "Sin problemas psicológicos", "valor": 3 }
+      ]
+    },
+    {
+      "id": "6",
+      "pregunta": "Índice de masa corporal (IMC)",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "6_1", "opcion": "IMC < 19 kg/m²", "valor": 1 },
+        { "id": "6_2", "opcion": "IMC entre 19 y 21 kg/m²", "valor": 2 },
+        { "id": "6_3", "opcion": "IMC entre 21 y 23 kg/m²", "valor": 3 },
+        { "id": "6_4", "opcion": "IMC ≥ 23 kg/m²", "valor": 4 }
+      ]
+    },
+    {
+      "id": "7",
+      "pregunta": "Perímetro de la pantorrilla (cm)",
+      "tipo": "radio",
+      "requerido": true,
+      "opciones": [
+        { "id": "7_1", "opcion": "< 31 cm", "valor": 1 },
+        { "id": "7_2", "opcion": "≥ 31 cm", "valor": 2 }
+      ]
+    }
+  ]
+}

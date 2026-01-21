@@ -9,9 +9,87 @@ const PORT = process.env.PORT || 3001;
 const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 
+// Importar formularios de preguntas
+const formularios = require("./data/preguntas");
+
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+//* ==========================================
+//* ENDPOINTS DE PREGUNTAS (API de Microservicio)
+//* ==========================================
+
+/**
+ * GET /preguntas
+ * Obtiene la lista de todos los formularios disponibles con sus metadatos
+ */
+app.get("/preguntas", (req, res) => {
+  try {
+    const listaFormularios = Object.keys(formularios).map((key) => {
+      const form = formularios[key];
+      return {
+        id: form.id,
+        nombre: form.nombre,
+        descripcion: form.descripcion,
+        version: form.version,
+        totalPreguntas: form.preguntas?.length || 0,
+        categorias: form.categorias || null,
+      };
+    });
+
+    return res.status(200).json({
+      success: true,
+      total: listaFormularios.length,
+      formularios: listaFormularios,
+    });
+  } catch (error) {
+    console.error("Error al obtener lista de formularios:", error);
+    return res.status(500).json({
+      success: false,
+      error: "Error al obtener la lista de formularios",
+    });
+  }
+});
+
+/**
+ * GET /preguntas/:tipo
+ * Obtiene las preguntas de un formulario específico
+ */
+app.get("/preguntas/:tipo", (req, res) => {
+  try {
+    const { tipo } = req.params;
+
+    if (!tipo) {
+      return res.status(400).json({
+        success: false,
+        error: "El tipo de formulario es requerido",
+      });
+    }
+
+    const formulario = formularios[tipo.toLowerCase()];
+
+    if (!formulario) {
+      const tiposDisponibles = Object.keys(formularios);
+      return res.status(404).json({
+        success: false,
+        error: `Formulario '${tipo}' no encontrado`,
+        tiposDisponibles,
+      });
+    }
+
+    return res.status(200).json({
+      success: true,
+      ...formulario,
+    });
+  } catch (error) {
+    console.error("Error al obtener preguntas:", error);
+    return res.status(500).json({
+      success: false,
+      error: "Error al obtener las preguntas del formulario",
+    });
+  }
+});
 
 //* Endpoint para recibir la petición y redirigir según el tipo
 
@@ -78,7 +156,7 @@ app.get("/:tipo/:encryptedData", (req, res) => {
     }
 
     const redirectUrl = `${baseUrl}${redirectPath}?ed=${encodeURIComponent(
-      encryptedData
+      encryptedData,
     )}&tipo=${tipo}`;
 
     return res.redirect(redirectUrl);
